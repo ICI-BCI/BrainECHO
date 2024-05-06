@@ -1,0 +1,3 @@
+# A novelty architecture for EEG2text
+
+code is coming soon...
