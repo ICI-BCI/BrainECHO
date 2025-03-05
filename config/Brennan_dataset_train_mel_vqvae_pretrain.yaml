@@ -1,0 +1,22 @@
+log_dir: ./logs/logging/Brennandataset
+
+state: INFO
+
+dataset_path: ./datasets/Brennan/split_by_subject/
+
+cuda: 0
+
+model_name: MelVQVAE
+
+num_epoch_finetune: 400
+
+T_max: 400
+
+lr_finetune: 2e-4
+
+batch_size: 16
+
+save_path: ./checkpoints/whisper_decoding/Brennan_dataset/Brennan_dataset-mel-vqvae-pretrain-400400-2e-4
+
+finetune_optimizer: adamw
+task_name: eeg2text
