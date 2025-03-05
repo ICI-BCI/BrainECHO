@@ -2,13 +2,13 @@
 
 ![BrainECHO.png](BrainECHO.png)
 
-### 1. Data Download and Preprocessing
+## Data Download and Preprocessing
 
 First, download the Brennan dataset from https://deepblue.lib.umich.edu/data/concern/data_sets/bg257f92t and save it to a designated folder. Next, modify the data path in the code under `./preprocess/Brennan` accordingly, and then execute the preprocessing script: `bash ./preprocess/Brennan/process_Brennan.sh`
 
 Similarly, download the GWilliams dataset from https://osf.io/ag3kj/ and save it to another folder. Update the data path in the code under `./preprocess/GWilliams`, and then run the following script: `bash ./preprocess/GWilliams/process_GWilliams.sh`
 
-### 2. Training and Evaluation
+## Training and Evaluation
 
 The three-stage training and evaluation process for the Brennan dataset can be conducted as follows:
 
