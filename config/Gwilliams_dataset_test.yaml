@@ -1,0 +1,12 @@
+log_dir: ./logs/logging/megdataset_test
+
+dataset_path: ./datasets/meg/
+
+cuda: 0
+
+model_name: MelVQUpsampleAlignWhisper
+
+batch_size: 32
+finetune_optimizer: adamw
+task_name: meg2text
+state: INFO
