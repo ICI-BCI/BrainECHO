@@ -11,9 +11,9 @@ PyYAML==6.0.2
 scikit_learn==1.4.2
 scipy==1.14.0
 soundfile==0.12.1
-torch==2.0.1
+torch>=2.2.0
 torchmetrics==1.4.0.post0
 tqdm==4.66.4
-transformers==4.35.2
+transformers==4.48.0
 wandb==0.17.6
 whisperx==3.1.4
