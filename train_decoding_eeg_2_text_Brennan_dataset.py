@@ -370,8 +370,14 @@ if __name__ == "__main__":
 
     """ add pretrained layers """
     pretrained = WhisperForConditionalGeneration.from_pretrained("/home/szx/eeg2text/models/huggingface/whisper-base.en").to(device)
-    for p in model.parameters():
-        p.requires_grad = False
+    # for p in model.parameters():
+    #     p.requires_grad = False
+    # for p in pretrained.parameters():
+    #     p.requires_grad = False
+    freeze_modules = ["TS_Conv", "transformer", "pos_embed_e"]
+    for module in freeze_modules:
+        for p in getattr(model, module).parameters():
+            p.requires_grad = False
     for p in pretrained.parameters():
         p.requires_grad = False
     config = AdaLoraConfig(
