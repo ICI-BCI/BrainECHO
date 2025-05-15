@@ -1,5 +1,7 @@
 # BrainECHO: Semantic Brain Signal Decoding through Vector-Quantized Spectrogram Reconstruction for Whisper-Enhanced Text Generation
 
+**BrainECHO** (<font color='blue'>https://arxiv.org/abs/2410.14971</font>) is a novel three-stage (autoencoding-alignment-finetuning) decoding framework for open-vocabulary EEG/MEG-to-text translation. [**Findings of ACL 2025**]
+
 ![BrainECHO.png](BrainECHO.png)
 
 ## Data Download and Preprocessing
